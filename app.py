@@ -9,6 +9,8 @@ for _ in range(5):
     dto = {
         "_id": str(uuid4()),
         "payload": str(uuid4()),
+        "field2" : str(int(time.time())),
+        "payload2": str(uuid4()),
     }
     storage.save_data(dto)
 

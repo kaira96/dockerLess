@@ -115,6 +115,13 @@ sudo docker run --rm -d -p 27017:27017 mongo
 
 
 
+sudo docker ps
+sudo docker stop [CONTAINER ID]
+Вот так можно работать с временной базой данных
+
+
+
+
 
 
 
