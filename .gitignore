@@ -861,4 +861,4 @@ FodyWeavers.xsd
 *.tlog
 
 # End of https://www.toptal.com/developers/gitignore/api/python,flask,django,virtualenv,venv,pycharm+all,pycharm,visualstudiocode,visualstudio
-
+.virtualenvs
