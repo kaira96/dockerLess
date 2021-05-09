@@ -120,6 +120,17 @@ sudo docker stop [CONTAINER ID]
 Вот так можно работать с временной базой данных
 
 
+Как удалить Image локально есть уже не нужны
+sudo docker ps
+sudo docker stop [CONTAINER ID]
+sudo docker images
+sudo docker rmi [REPOSITORY]
+
+images <none> - они возникают когда мы снова и снова создавали один и тот же образ с тем же тегом
+и при такой манипуляции он переезжает новосозданный и вот так <none> оставляет после себя
+и как удалить их пачкой
+sudo docker images -q
+sudo docker rmi (docker images -q)
 
 
 
