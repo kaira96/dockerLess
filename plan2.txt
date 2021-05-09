@@ -54,6 +54,17 @@ sudo docker run --name hello -d --rm hello-world
 автоудаление контейнера после отработки или остановки
 
 
+============================================
+
+
+sudo docker build -t web-hello .
+собираем новый образ
+
+sudo docker images
+
+sudo docker run --rm --name web web-hello
+но из-за изоляции приложений неудастся подключиться
+
 
 
 
