@@ -83,6 +83,8 @@ sudo docker build -t web-hello .
 заново запускаем
 sudo docker run --rm --name web -p 8080:8080 web-hello
 
+также можно сделать и так
+sudo docker run --rm --name web -p -e ENV TZ=Asia/Bishkek 8080:8080 web-hello
 
 
 
