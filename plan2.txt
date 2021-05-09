@@ -106,6 +106,13 @@ sudo docker run --rm --name web -p 8080:8080 -v web:/usr/src/app/resources web-h
 потому что он хранится в volume
 
 
+Как докер помогает в разработке
+Задача добавить базу данных временно чтото протестировать и удалить
+
+sudo docker images - не покажет mongo но в docker hube она есть
+
+sudo docker run --rm -d -p 27017:27017 mongo
+
 
 
 
