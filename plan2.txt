@@ -87,6 +87,15 @@ sudo docker run --rm --name web -p 8080:8080 web-hello
 sudo docker run --rm --name web -p -e ENV TZ=Asia/Bishkek 8080:8080 web-hello
 
 
+Docker Image для Docker контейнера только read only т.е. не может поменять
+все что происходит в контейнере не оказывает влияние на Image
+Задача: если прикрутим базу данных чтоб при остановке контейнера
+не потерять данные
+
+-v ['от куда':'куда']
+sudo docker run --rm --name web -p 8080:8080 -e TZ=Asia/Bishkek -v /home/tenthent/dockerTest/resources:/usr/src/app/resources web-hello
+Теперь можем монтировать локальные папки в докер контейнеры
+
 
 
 
