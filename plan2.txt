@@ -96,6 +96,14 @@ Docker Image для Docker контейнера только read only т.е. н
 sudo docker run --rm --name web -p 8080:8080 -e TZ=Asia/Bishkek -v /home/tenthent/dockerTest/resources:/usr/src/app/resources web-hello
 Теперь можем монтировать локальные папки в докер контейнеры
 
+docker volume - это настройка над этими же папками
+что бы посмотреть какие docker volume у нас есть команда
+sudo docker volume ls
+sudo docker volume create web
+
+sudo docker run --rm --name web -p 8080:8080 -v web:/usr/src/app/resources web-hello
+Теперь при остановке контейнера с данными в базе данных нечего не случится
+потому что он хранится в volume
 
 
 
