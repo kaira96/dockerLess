@@ -33,6 +33,25 @@ sudo docker rm $(docker ps -qa)
 
 
 
+sudo docker build -t hello-world .
+перезапускаем
+
+
+sudo docker run --name hello -d hello-world
+-d - запустить приложение в фоне
+
+sudo docker ps
+посмотреть статус
+
+sudo docker stop [передаем имя]
+остановка контейнера
+
+sudo docker ps -a
+
+sudo docker rm hello
+
+sudo docker run --name hello -d --rm hello-world
+автоудаление контейнера после отработки или остановки
 
 
 
