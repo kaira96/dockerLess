@@ -76,11 +76,12 @@ sudo docker run --rm --name web -p 8080:8080 web-hello
 Кстати время может отличаться из-за другой временной зоны в контейнере
 исправим это с помощью переменной окружения
 
+после изменений в Dockerfile
+sudo docker build -t web-hello .
+заново собираем образ
 
-
-
-
-
+заново запускаем
+sudo docker run --rm --name web -p 8080:8080 web-hello
 
 
 
